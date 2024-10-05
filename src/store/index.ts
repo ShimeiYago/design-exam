@@ -1,11 +1,13 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { loginReducer } from './login/slice';
+import { resasDataReducer } from './resas-data/slice';
 
 // store
 export const store = configureStore({
   reducer: {
     login: loginReducer,
+    resasData: resasDataReducer,
   },
 });
 

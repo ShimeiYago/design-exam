@@ -1,4 +1,3 @@
-import { axiosMockError } from 'api/mock/error-response';
 import axios, {
   AxiosAdapter,
   AxiosError,
@@ -55,7 +54,7 @@ function getMockAdapter(mockData: unknown, mode: 'normal' | 'error'): AxiosAdapt
           resolve({ data: mockData } as AxiosResponse);
           break;
         case 'error':
-          reject(axiosMockError as AxiosError);
+          reject(axiosMockError);
           break;
       }
     });
@@ -65,3 +64,11 @@ function getMockAdapter(mockData: unknown, mode: 'normal' | 'error'): AxiosAdapt
 async function sleep(time: number) {
   await new Promise((resolve) => setTimeout(resolve, time));
 }
+
+const axiosMockError = {
+  response: {
+    status: 500,
+    data: {},
+  },
+  message: 'Mock Intentional API Error',
+} as AxiosError;

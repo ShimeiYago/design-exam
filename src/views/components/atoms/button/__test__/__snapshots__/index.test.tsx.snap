@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<button
+  className="button basic"
+  onClick={[MockFunction]}
+>
+  login
+</button>
+`;
+
+exports[`Shallow Snapshot Tests fullWidth case 1`] = `
+<button
+  className="button basic fullWidth"
+  onClick={[MockFunction]}
+>
+  login
+</button>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<div
+  className="container"
+>
+  <label
+    className="label"
+  >
+    label
+  </label>
+  <InputField
+    label="label"
+    onChange={[MockFunction]}
+    value="text"
+  />
+</div>
+`;

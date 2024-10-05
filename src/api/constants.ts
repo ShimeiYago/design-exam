@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.REACT_APP_API_BASE_URL ?? 'http://localhost:3001';
+export const RESAS_BASE_URL = 'https://opendata.resas-portal.go.jp/api/v1/';

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<div
+  className="iconWithText"
+>
+  <Image
+    src="src"
+  />
+  <TextWrapper
+    size="small"
+  >
+    text
+  </TextWrapper>
+</div>
+`;

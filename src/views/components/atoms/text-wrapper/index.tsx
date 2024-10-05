@@ -1,13 +1,15 @@
 import styles from './index.module.css';
 
 export function TextWrapper(props: Props): JSX.Element {
-  const { children, size, align, bold } = props;
-  const classNames = [styles[size]];
+  const { children, size, align, bold, tag = 'p' } = props;
+  const classNames = [styles.text, styles[size]];
 
   if (align) classNames.push(styles[align]);
   if (bold) classNames.push(styles.bold);
 
-  return <p className={classNames.join(' ')}>{children}</p>;
+  const Tag = tag as keyof JSX.IntrinsicElements;
+
+  return <Tag className={classNames.join(' ')}>{children}</Tag>;
 }
 
 export type Props = {
@@ -15,4 +17,5 @@ export type Props = {
   size: 'small' | 'medium' | 'large';
   align?: 'left' | 'center' | 'right';
   bold?: boolean;
+  tag?: 'p' | 'div' | 'span' | 'h1';
 };

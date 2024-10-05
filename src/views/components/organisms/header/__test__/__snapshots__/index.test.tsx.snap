@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<header
+  className="header"
+  style={
+    Object {
+      "height": "48px",
+    }
+  }
+>
+  <TextWrapper
+    bold={true}
+    size="medium"
+    tag="h1"
+  >
+    title
+  </TextWrapper>
+  <IconWithText
+    iconSrc="src"
+    text="example@example.com"
+  />
+</header>
+`;

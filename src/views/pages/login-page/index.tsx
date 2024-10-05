@@ -9,7 +9,7 @@ export function LoginPage(): JSX.Element {
 
   return (
     <Spacing paddingTop="30px" paddingHorizontal="5px">
-      <Card maxWidth="480px">
+      <Card maxWidth="480px" radius>
         <Spacing paddingHorizontal="80px" paddingVertical="40px">
           <LoginForm onLogin={() => dispatch(login())} />
         </Spacing>

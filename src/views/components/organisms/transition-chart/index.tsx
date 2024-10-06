@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { Spacing } from 'views/components/atoms/spacing';
+import { LoadingSpinner } from 'views/components/atoms/loading-spinner';
 
 export function TransitionChart(props: Props): JSX.Element {
   const { data, loading, failed, chartTitle } = props;
@@ -17,9 +18,7 @@ export function TransitionChart(props: Props): JSX.Element {
   if (loading) {
     return (
       <Spacing paddingVertical="20px" paddingHorizontal="15px">
-        <TextWrapper size="medium" align="center">
-          Loading...
-        </TextWrapper>
+        <LoadingSpinner />
       </Spacing>
     );
   }

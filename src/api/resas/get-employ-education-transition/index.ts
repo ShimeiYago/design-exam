@@ -17,7 +17,7 @@ export async function getEmployEducationTransition(
   const queryParams = new URLSearchParams({
     prefecture_cd: params.prefectureCd.toString(),
     classification: params.classification,
-    matter: params.displayType,
+    matter: params.matter,
     displayType: params.displayType,
     gender: params.gender,
     displayMethod: '0',

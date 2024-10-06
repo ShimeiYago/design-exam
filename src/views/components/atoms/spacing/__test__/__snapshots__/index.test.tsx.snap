@@ -4,12 +4,10 @@ exports[`Shallow Snapshot Tests basic 1`] = `
 <div
   style={
     Object {
-      "margin": "10px",
-      "marginBottom": undefined,
+      "marginBottom": "10px",
       "marginLeft": undefined,
       "marginRight": undefined,
-      "marginTop": undefined,
-      "padding": undefined,
+      "marginTop": "10px",
       "paddingBottom": undefined,
       "paddingLeft": undefined,
       "paddingRight": undefined,

@@ -5,7 +5,7 @@ let wrapper: ShallowWrapper<Props>;
 
 const props: Props = {
   children: 'text',
-  margin: '10px',
+  marginVertical: '10px',
 };
 
 describe('Shallow Snapshot Tests', () => {

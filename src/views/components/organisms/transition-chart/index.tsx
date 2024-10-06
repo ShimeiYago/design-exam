@@ -12,7 +12,7 @@ import {
 import { Spacing } from 'views/components/atoms/spacing';
 
 export function TransitionChart(props: Props): JSX.Element {
-  const { data, loading, failed } = props;
+  const { data, loading, failed, chartTitle } = props;
 
   if (loading) {
     return (
@@ -37,7 +37,7 @@ export function TransitionChart(props: Props): JSX.Element {
   return (
     <Spacing paddingVertical="20px" paddingHorizontal="15px">
       <TextWrapper size="small" bold>
-        進学者数の推移
+        {chartTitle}
       </TextWrapper>
       <ResponsiveContainer width="100%" height={500}>
         <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
@@ -59,4 +59,5 @@ export type Props = {
   data: EmployEducationTransitionValue[];
   loading: boolean;
   failed: boolean;
+  chartTitle: string;
 };

@@ -9,7 +9,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     bold={true}
     size="small"
   >
-    進学者数の推移
+    title
   </TextWrapper>
   <ForwardRef
     height={500}

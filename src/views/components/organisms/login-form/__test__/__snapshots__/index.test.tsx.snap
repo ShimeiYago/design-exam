@@ -6,7 +6,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     <TextWrapper
       align="center"
       bold={true}
-      size="large"
+      size="xlarge"
     >
       ログイン
     </TextWrapper>

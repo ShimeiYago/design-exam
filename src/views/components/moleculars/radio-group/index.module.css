@@ -1,0 +1,15 @@
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.radioInput {
+  margin-right: 8px;
+}

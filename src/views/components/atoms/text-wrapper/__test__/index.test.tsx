@@ -26,4 +26,9 @@ describe('Shallow Snapshot Tests', () => {
     wrapper.setProps({ bold: true });
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('gray color case', () => {
+    wrapper.setProps({ color: 'gray' });
+    expect(wrapper).toMatchSnapshot();
+  });
 });

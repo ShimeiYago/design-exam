@@ -15,10 +15,10 @@ export async function getEmployEducationTransition(
 
   const queryParams = new URLSearchParams({
     prefecture_cd: params.prefectureCd.toString(),
-    classification: params.classification.toString(),
-    matter: params.displayType.toString(),
-    displayType: params.displayType.toString(),
-    gender: params.gender.toString(),
+    classification: params.classification,
+    matter: params.displayType,
+    displayType: params.displayType,
+    gender: params.gender,
     displayMethod: '0',
   });
   const url = `${RESAS_BASE_URL}/employEducation/localjobAcademic/toTransition?${queryParams.toString()}`;

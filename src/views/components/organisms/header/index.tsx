@@ -8,7 +8,7 @@ export function Header(props: Props): JSX.Element {
 
   return (
     <header className={styles.header} style={{ height: HEADER_HEIGHT }}>
-      <TextWrapper size="medium" tag="h1" bold>
+      <TextWrapper size="large" tag="h1" bold>
         {title}
       </TextWrapper>
       <IconWithText text={emailAddress} iconSrc={iconSrc} />

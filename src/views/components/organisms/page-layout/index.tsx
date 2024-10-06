@@ -8,7 +8,7 @@ export function PageLayout(props: Props): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
-        <Card height={`calc(100vh - ${HEADER_HEIGHT})`}>{sidebar}</Card>
+        <Card minHeight={`calc(100vh - ${HEADER_HEIGHT})`}>{sidebar}</Card>
       </div>
       <div className={styles.main}>
         <Card radius>{children}</Card>

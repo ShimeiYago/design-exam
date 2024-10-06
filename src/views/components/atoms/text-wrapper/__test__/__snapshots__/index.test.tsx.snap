@@ -23,3 +23,11 @@ exports[`Shallow Snapshot Tests bold case 1`] = `
   text
 </p>
 `;
+
+exports[`Shallow Snapshot Tests gray color case 1`] = `
+<p
+  className="text medium gray"
+>
+  text
+</p>
+`;

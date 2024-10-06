@@ -113,7 +113,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
       layout="horizontal"
       margin={
         Object {
-          "bottom": 5,
+          "bottom": 15,
           "left": 20,
           "right": 30,
           "top": 20,
@@ -135,8 +135,8 @@ exports[`Shallow Snapshot Tests basic 1`] = `
         hide={false}
         label={
           Object {
-            "offset": 0,
-            "position": "insideBottomRight",
+            "offset": -10,
+            "position": "insideBottom",
             "value": "年",
           }
         }
@@ -288,11 +288,6 @@ exports[`Shallow Snapshot Tests loading case 1`] = `
   paddingHorizontal="15px"
   paddingVertical="20px"
 >
-  <TextWrapper
-    align="center"
-    size="medium"
-  >
-    Loading...
-  </TextWrapper>
+  <LoadingSpinner />
 </Spacing>
 `;

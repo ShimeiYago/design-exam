@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests align center 1`] = `
+<p
+  className="text medium center"
+>
+  text
+</p>
+`;
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<p
+  className="text medium"
+>
+  text
+</p>
+`;
+
+exports[`Shallow Snapshot Tests bold case 1`] = `
+<p
+  className="text medium bold"
+>
+  text
+</p>
+`;
+
+exports[`Shallow Snapshot Tests gray color case 1`] = `
+<p
+  className="text medium gray"
+>
+  text
+</p>
+`;

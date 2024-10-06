@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<img
+  alt="alt-text"
+  src="image-data"
+  style={
+    Object {
+      "height": "auto",
+      "width": "auto",
+    }
+  }
+/>
+`;

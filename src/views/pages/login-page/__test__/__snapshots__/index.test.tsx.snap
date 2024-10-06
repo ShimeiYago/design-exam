@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<Spacing
+  paddingHorizontal="5px"
+  paddingTop="30px"
+>
+  <Card
+    maxWidth="480px"
+    radius={true}
+  >
+    <Spacing
+      paddingHorizontal="80px"
+      paddingVertical="40px"
+    >
+      <LoginForm
+        onLogin={[Function]}
+      />
+    </Spacing>
+  </Card>
+</Spacing>
+`;

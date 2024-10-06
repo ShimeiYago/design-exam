@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<input
+  className="input"
+  onChange={[MockFunction]}
+  type="text"
+  value="text"
+/>
+`;

@@ -1,0 +1,45 @@
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.xsmall {
+  font-size: 12px;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 18px;
+}
+
+.large {
+  font-size: 20px;
+}
+
+.xlarge {
+  font-size: 24px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.gray {
+  color: #64748B
+}

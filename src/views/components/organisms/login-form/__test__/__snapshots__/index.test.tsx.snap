@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<Fragment>
+  <Spacing>
+    <TextWrapper
+      align="center"
+      bold={true}
+      size="xlarge"
+    >
+      ログイン
+    </TextWrapper>
+  </Spacing>
+  <Spacing
+    marginVertical="40px"
+  >
+    <Spacing
+      marginBottom="24px"
+    >
+      <LabeledInputField
+        label="メールアドレス"
+        onChange={[Function]}
+      />
+    </Spacing>
+    <Spacing>
+      <LabeledInputField
+        label="パスワード"
+        onChange={[Function]}
+        value=""
+      />
+    </Spacing>
+  </Spacing>
+  <Spacing>
+    <Button
+      color="primary"
+      fullWidth={true}
+      onClick={[MockFunction]}
+    >
+      ログイン
+    </Button>
+  </Spacing>
+</Fragment>
+`;

@@ -1,4 +1,4 @@
-import { AxiosError, AxiosResponse } from 'axios';
+import { AxiosError, AxiosRequestHeaders, AxiosResponse } from 'axios';
 import { getAxiosInstance } from 'api/utils/get-axios-instance';
 import { EmployEducationTransitionValue } from 'store/resas-data/model/employ-education-transition-value';
 import { handleAxiosError } from 'api/utils/handle-axios-error';
@@ -6,12 +6,13 @@ import { RESAS_BASE_URL } from 'api/constants';
 import { mockGetEmployEducationTransitionResponse } from './mock-data';
 import { GetEmployEducationTransitionParams } from './parameters';
 
-// process.env.REACT_APP_API_BASE_URL
-
 export async function getEmployEducationTransition(
   params: GetEmployEducationTransitionParams,
 ): Promise<GetEmployEducationTransitionResponse> {
-  const axiosInstance = getAxiosInstance({}, mockGetEmployEducationTransitionResponse);
+  const headers: AxiosRequestHeaders = {
+    'X-API-KEY': process.env.REACT_APP_RESAS_APIKEY ?? '',
+  };
+  const axiosInstance = getAxiosInstance({ headers }, mockGetEmployEducationTransitionResponse);
 
   const queryParams = new URLSearchParams({
     prefecture_cd: params.prefectureCd.toString(),

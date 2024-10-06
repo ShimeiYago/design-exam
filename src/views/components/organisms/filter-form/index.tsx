@@ -12,7 +12,7 @@ import { Spacing } from 'views/components/atoms/spacing';
 import { TARGET_PREFECTURE_CD } from 'views/constants';
 
 export function FilterForm(props: Props): JSX.Element {
-  const { onChange } = props;
+  const { onChange, disabled } = props;
   const [classification, setClassification] = React.useState(ResasClassification.Schooling);
   const [matter, setMatter] = React.useState(ResasMatter.Local);
   const [displayType, setDisplayType] = React.useState(ResasDisplayType.AllSchooling);
@@ -49,6 +49,7 @@ export function FilterForm(props: Props): JSX.Element {
         { value: ResasClassification.Employment, label: '就活' },
       ],
       selectedValue: classification,
+      disabled,
       onChange: (e) => setClassification(e.target.value as ResasClassification),
     },
     {
@@ -60,12 +61,14 @@ export function FilterForm(props: Props): JSX.Element {
         { value: ResasMatter.NetInflow, label: '純流入' },
       ],
       selectedValue: matter,
+      disabled,
       onChange: (e) => setMatter(e.target.value as ResasMatter),
     },
     {
       groupLabel: '表示内容',
       options: getDisplayTypeOptions(),
       selectedValue: displayType,
+      disabled,
       onChange: (e) => setDisplayType(e.target.value as ResasDisplayType),
     },
     {
@@ -76,6 +79,7 @@ export function FilterForm(props: Props): JSX.Element {
         { value: ResasGender.Female, label: '女性' },
       ],
       selectedValue: gender,
+      disabled,
       onChange: (e) => setGender(e.target.value as ResasGender),
     },
   ];
@@ -107,5 +111,6 @@ export function FilterForm(props: Props): JSX.Element {
 }
 
 export type Props = {
+  disabled: boolean;
   onChange: (filter: GetEmployEducationTransitionParams) => void;
 };

@@ -51,6 +51,9 @@ export function TransitionChart(props: Props): JSX.Element {
           <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 8 }} />
         </LineChart>
       </ResponsiveContainer>
+      <TextWrapper size="xsmall" color="gray" align="right">
+        出典：RESAS（地域経済分析システム）
+      </TextWrapper>
     </Spacing>
   );
 }

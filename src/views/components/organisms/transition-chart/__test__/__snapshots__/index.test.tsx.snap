@@ -259,6 +259,13 @@ exports[`Shallow Snapshot Tests basic 1`] = `
       />
     </LineChart>
   </ForwardRef>
+  <TextWrapper
+    align="right"
+    color="gray"
+    size="xsmall"
+  >
+    出典：RESAS（地域経済分析システム）
+  </TextWrapper>
 </Spacing>
 `;
 

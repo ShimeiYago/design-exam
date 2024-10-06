@@ -30,6 +30,7 @@ const props: Props = {
   ],
   loading: false,
   failed: false,
+  chartTitle: 'title',
 };
 
 describe('Shallow Snapshot Tests', () => {

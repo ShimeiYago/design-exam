@@ -40,9 +40,9 @@ export function TransitionChart(props: Props): JSX.Element {
         {chartTitle}
       </TextWrapper>
       <ResponsiveContainer width="100%" height={500}>
-        <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+        <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 15 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="year" label={{ value: '年', position: 'insideBottomRight', offset: 0 }} />
+          <XAxis dataKey="year" label={{ value: '年', position: 'insideBottom', offset: -10 }} />
           <YAxis
             domain={['dataMin', 'dataMax']}
             label={{ value: '人数 (万人)', angle: -90, position: 'insideLeft' }}

@@ -11,11 +11,13 @@
 3. `npm install`
 4. (Optional) `npx husky install` 
 
-Step 4 is only for developer.
+Step 4 is only for developer. 
 
 ## Run application
 
-Run `npm start`.
+Run `REACT_APP_RESAS_APIKEY=xxx npm run start`.
+
+Please fill xxx with your RESAS API key.
 
 And open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

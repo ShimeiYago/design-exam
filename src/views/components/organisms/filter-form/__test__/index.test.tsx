@@ -5,6 +5,7 @@ let wrapper: ShallowWrapper<Props>;
 
 const props: Props = {
   onChange: jest.fn(),
+  disabled: false,
 };
 
 describe('Shallow Snapshot Tests', () => {

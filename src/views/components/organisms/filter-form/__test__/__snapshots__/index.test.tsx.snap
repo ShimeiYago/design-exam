@@ -17,6 +17,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     marginTop="32px"
   >
     <RadioGroup
+      disabled={false}
       groupLabel="表示分類"
       onChange={[Function]}
       options={
@@ -39,6 +40,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     marginTop="32px"
   >
     <RadioGroup
+      disabled={false}
       groupLabel="進学・就職先"
       onChange={[Function]}
       options={
@@ -69,6 +71,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     marginTop="32px"
   >
     <RadioGroup
+      disabled={false}
       groupLabel="表示内容"
       onChange={[Function]}
       options={
@@ -95,6 +98,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     marginTop="32px"
   >
     <RadioGroup
+      disabled={false}
       groupLabel="性別"
       onChange={[Function]}
       options={

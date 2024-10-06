@@ -27,7 +27,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
             "value": "1",
           },
           Object {
-            "label": "就活",
+            "label": "就職",
             "value": "2",
           },
         ]
@@ -46,7 +46,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
       options={
         Array [
           Object {
-            "label": "地元進学",
+            "label": "地元",
             "value": "0",
           },
           Object {

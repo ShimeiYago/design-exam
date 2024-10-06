@@ -4,7 +4,7 @@ export enum ResasClassification {
 }
 
 export enum ResasMatter {
-  Local = '0', // 地元進学
+  Local = '0', // 地元
   Outflow = '1', // 流出
   Inflow = '2', // 流入
   NetInflow = '3', // 純流入

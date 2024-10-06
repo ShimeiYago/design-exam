@@ -9,7 +9,12 @@ import { RadioGroup, Props as RadioGroupProps } from 'views/components/molecular
 import React from 'react';
 import { TextWrapper } from 'views/components/atoms/text-wrapper';
 import { Spacing } from 'views/components/atoms/spacing';
-import { TARGET_PREFECTURE_CD } from 'views/constants';
+import {
+  RESAS_CLASSIFICATION_LABELS,
+  RESAS_GENDER_LABELS,
+  RESAS_MATTER_LABELS,
+  TARGET_PREFECTURE_CD,
+} from 'views/constants';
 
 export function FilterForm(props: Props): JSX.Element {
   const { onChange, disabled } = props;
@@ -45,8 +50,14 @@ export function FilterForm(props: Props): JSX.Element {
     {
       groupLabel: '表示分類',
       options: [
-        { value: ResasClassification.Schooling, label: '進学' },
-        { value: ResasClassification.Employment, label: '就活' },
+        {
+          value: ResasClassification.Schooling,
+          label: RESAS_CLASSIFICATION_LABELS[ResasClassification.Schooling],
+        },
+        {
+          value: ResasClassification.Employment,
+          label: RESAS_CLASSIFICATION_LABELS[ResasClassification.Employment],
+        },
       ],
       selectedValue: classification,
       disabled,
@@ -55,10 +66,10 @@ export function FilterForm(props: Props): JSX.Element {
     {
       groupLabel: '進学・就職先',
       options: [
-        { value: ResasMatter.Local, label: '地元進学' },
-        { value: ResasMatter.Outflow, label: '流出' },
-        { value: ResasMatter.Inflow, label: '流入' },
-        { value: ResasMatter.NetInflow, label: '純流入' },
+        { value: ResasMatter.Local, label: RESAS_MATTER_LABELS[ResasMatter.Local] },
+        { value: ResasMatter.Outflow, label: RESAS_MATTER_LABELS[ResasMatter.Outflow] },
+        { value: ResasMatter.Inflow, label: RESAS_MATTER_LABELS[ResasMatter.Inflow] },
+        { value: ResasMatter.NetInflow, label: RESAS_MATTER_LABELS[ResasMatter.NetInflow] },
       ],
       selectedValue: matter,
       disabled,
@@ -66,7 +77,7 @@ export function FilterForm(props: Props): JSX.Element {
     },
     {
       groupLabel: '表示内容',
-      options: getDisplayTypeOptions(),
+      options: getDisplayTypeOptions(), // Assuming this uses RESAS_DISPLAY_TYPE_LABELS internally
       selectedValue: displayType,
       disabled,
       onChange: (e) => setDisplayType(e.target.value as ResasDisplayType),
@@ -74,9 +85,9 @@ export function FilterForm(props: Props): JSX.Element {
     {
       groupLabel: '性別',
       options: [
-        { value: ResasGender.All, label: '総数' },
-        { value: ResasGender.Male, label: '男性' },
-        { value: ResasGender.Female, label: '女性' },
+        { value: ResasGender.All, label: RESAS_GENDER_LABELS[ResasGender.All] },
+        { value: ResasGender.Male, label: RESAS_GENDER_LABELS[ResasGender.Male] },
+        { value: ResasGender.Female, label: RESAS_GENDER_LABELS[ResasGender.Female] },
       ],
       selectedValue: gender,
       disabled,

@@ -15,7 +15,7 @@ export function TextWrapper(props: Props): JSX.Element {
 
 export type Props = {
   children: string;
-  size: 'small' | 'medium' | 'large' | 'xlarge';
+  size: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
   align?: 'left' | 'center' | 'right';
   bold?: boolean;
   tag?: 'p' | 'div' | 'span' | 'h1';

@@ -13,7 +13,7 @@ import {
   RESAS_CLASSIFICATION_LABELS,
   RESAS_GENDER_LABELS,
   RESAS_MATTER_LABELS,
-  TARGET_PREFECTURE_CD,
+  TARGET_PREFECTURE,
 } from 'views/constants';
 
 export function FilterForm(props: Props): JSX.Element {
@@ -30,7 +30,7 @@ export function FilterForm(props: Props): JSX.Element {
       matter,
       displayType,
       gender,
-      prefectureCd: TARGET_PREFECTURE_CD,
+      prefectureCd: TARGET_PREFECTURE.prefCd,
     });
     setIsInitialRendered(true);
   }, [matter, displayType, gender]);

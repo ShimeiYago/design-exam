@@ -19,6 +19,7 @@ import {
   RESAS_DISPLAY_TYPE_LABELS,
   RESAS_GENDER_LABELS,
   RESAS_MATTER_LABELS,
+  TARGET_PREFECTURE,
 } from 'views/constants';
 
 export function App(): JSX.Element {
@@ -50,9 +51,11 @@ export function App(): JSX.Element {
 
   function handleChangeFilter(filter: GetEmployEducationTransitionParams) {
     setChartTitle(
-      `${RESAS_CLASSIFICATION_LABELS[filter.classification]}者数の推移（${
-        RESAS_MATTER_LABELS[filter.matter]
-      }-${RESAS_DISPLAY_TYPE_LABELS[filter.displayType]}-${RESAS_GENDER_LABELS[filter.gender]}）`,
+      `${TARGET_PREFECTURE.name}の${
+        RESAS_CLASSIFICATION_LABELS[filter.classification]
+      }者数の推移（${RESAS_MATTER_LABELS[filter.matter]}-${
+        RESAS_DISPLAY_TYPE_LABELS[filter.displayType]
+      }-${RESAS_GENDER_LABELS[filter.gender]}）`,
     );
 
     dispatch(fetchResasData(filter));

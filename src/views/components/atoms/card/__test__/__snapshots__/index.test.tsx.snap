@@ -5,8 +5,8 @@ exports[`Shallow Snapshot Tests basic 1`] = `
   className="card"
   style={
     Object {
-      "height": undefined,
       "maxWidth": undefined,
+      "minHeight": undefined,
       "width": undefined,
     }
   }
@@ -20,8 +20,8 @@ exports[`Shallow Snapshot Tests radius 1`] = `
   className="card radius"
   style={
     Object {
-      "height": undefined,
       "maxWidth": undefined,
+      "minHeight": undefined,
       "width": undefined,
     }
   }

@@ -12,7 +12,7 @@ export function LoginForm(props: Props): JSX.Element {
   return (
     <>
       <Spacing>
-        <TextWrapper size="large" align="center" bold>
+        <TextWrapper size="xlarge" align="center" bold>
           ログイン
         </TextWrapper>
       </Spacing>

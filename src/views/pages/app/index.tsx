@@ -4,16 +4,24 @@ import { LoginPage } from '../login-page';
 import { Header } from 'views/components/organisms/header';
 import avatarIcon from 'images/Avatar.svg';
 import { PageLayout } from 'views/components/organisms/page-layout';
+import { FilterForm } from 'views/components/organisms/filter-form';
+import { GetEmployEducationTransitionParams } from 'api/resas/get-employ-education-transition/parameters';
 
 export function App(): JSX.Element {
   const isLoggedIn = useAppSelector(selectIsLoggedIn);
 
   if (!isLoggedIn) return <LoginPage />;
 
+  const sidebar = <FilterForm onChange={handleChangeFilter} />;
+
   return (
     <>
       <Header title="タイトル" iconSrc={avatarIcon} emailAddress={'xxx'} />
-      <PageLayout sidebar={'sidebar'}>Chart</PageLayout>
+      <PageLayout sidebar={sidebar}>Chart</PageLayout>
     </>
   );
+
+  function handleChangeFilter(filter: GetEmployEducationTransitionParams) {
+    console.log(filter);
+  }
 }

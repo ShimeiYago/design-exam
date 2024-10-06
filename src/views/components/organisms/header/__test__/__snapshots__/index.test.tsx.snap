@@ -11,7 +11,7 @@ exports[`Shallow Snapshot Tests basic 1`] = `
 >
   <TextWrapper
     bold={true}
-    size="medium"
+    size="large"
     tag="h1"
   >
     title

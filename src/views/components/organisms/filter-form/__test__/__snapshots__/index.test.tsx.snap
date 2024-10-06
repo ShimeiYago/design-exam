@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<Spacing
+  paddingHorizontal="32px"
+  paddingVertical="24px"
+>
+  <TextWrapper
+    bold={true}
+    color="gray"
+    size="medium"
+  >
+    フィルター
+  </TextWrapper>
+  <Spacing
+    key="filtering-表示分類"
+    marginTop="32px"
+  >
+    <RadioGroup
+      groupLabel="表示分類"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "進学",
+            "value": "1",
+          },
+          Object {
+            "label": "就活",
+            "value": "2",
+          },
+        ]
+      }
+      selectedValue="1"
+    />
+  </Spacing>
+  <Spacing
+    key="filtering-進学・就職先"
+    marginTop="32px"
+  >
+    <RadioGroup
+      groupLabel="進学・就職先"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "地元進学",
+            "value": "0",
+          },
+          Object {
+            "label": "流出",
+            "value": "1",
+          },
+          Object {
+            "label": "流入",
+            "value": "2",
+          },
+          Object {
+            "label": "純流入",
+            "value": "3",
+          },
+        ]
+      }
+      selectedValue="0"
+    />
+  </Spacing>
+  <Spacing
+    key="filtering-表示内容"
+    marginTop="32px"
+  >
+    <RadioGroup
+      groupLabel="表示内容"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "すべての進学",
+            "value": "10",
+          },
+          Object {
+            "label": "大学進学",
+            "value": "11",
+          },
+          Object {
+            "label": "短期大学進学",
+            "value": "12",
+          },
+        ]
+      }
+      selectedValue="10"
+    />
+  </Spacing>
+  <Spacing
+    key="filtering-性別"
+    marginTop="32px"
+  >
+    <RadioGroup
+      groupLabel="性別"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "総数",
+            "value": "0",
+          },
+          Object {
+            "label": "男性",
+            "value": "1",
+          },
+          Object {
+            "label": "女性",
+            "value": "2",
+          },
+        ]
+      }
+      selectedValue="0"
+    />
+  </Spacing>
+</Spacing>
+`;

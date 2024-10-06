@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow Snapshot Tests basic 1`] = `
+<div
+  className="group"
+>
+  <Spacing
+    marginBottom="8px"
+  >
+    <TextWrapper
+      bold={true}
+      size="small"
+    >
+      classification
+    </TextWrapper>
+  </Spacing>
+  <label
+    className="label"
+    key="radio-1"
+  >
+    <input
+      checked={true}
+      className="radioInput"
+      onChange={[MockFunction]}
+      type="radio"
+      value="1"
+    />
+    schooling
+  </label>
+  <label
+    className="label"
+    key="radio-2"
+  >
+    <input
+      checked={false}
+      className="radioInput"
+      onChange={[MockFunction]}
+      type="radio"
+      value="2"
+    />
+    employment
+  </label>
+</div>
+`;

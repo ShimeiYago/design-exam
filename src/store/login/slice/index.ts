@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { initialState } from '../model';
 
 export const loginSlice = createSlice({
@@ -8,6 +8,9 @@ export const loginSlice = createSlice({
     login(state) {
       state.isloggedIn = true;
     },
+    setEmail(state, action: PayloadAction<string>) {
+      state.email = action.payload;
+    },
   },
 });
 
@@ -15,4 +18,4 @@ export const loginSlice = createSlice({
 export const loginReducer = loginSlice.reducer;
 
 // actions
-export const { login } = loginSlice.actions;
+export const { login, setEmail } = loginSlice.actions;

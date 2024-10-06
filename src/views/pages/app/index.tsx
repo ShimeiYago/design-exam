@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from 'store';
-import { selectIsLoggedIn } from 'store/login/selector';
+import { selectEmail, selectIsLoggedIn } from 'store/login/selector';
 import { LoginPage } from '../login-page';
 import { Header } from 'views/components/organisms/header';
 import avatarIcon from 'images/Avatar.svg';
@@ -23,6 +23,7 @@ import {
 
 export function App(): JSX.Element {
   const isLoggedIn = useAppSelector(selectIsLoggedIn);
+  const email = useAppSelector(selectEmail);
   const employEducationTransition = useAppSelector(selectEmployEducationTransition);
   const loading = useAppSelector(selectLoading);
   const failed = useAppSelector(selectFailed);
@@ -35,7 +36,7 @@ export function App(): JSX.Element {
 
   return (
     <>
-      <Header title="タイトル" iconSrc={avatarIcon} emailAddress={'xxx'} />
+      <Header title="タイトル" iconSrc={avatarIcon} emailAddress={email} />
       <PageLayout sidebar={sidebar}>
         <TransitionChart
           data={employEducationTransition}

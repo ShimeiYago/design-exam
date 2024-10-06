@@ -20,7 +20,6 @@ exports[`Shallow Snapshot Tests basic 1`] = `
       <LabeledInputField
         label="メールアドレス"
         onChange={[Function]}
-        value=""
       />
     </Spacing>
     <Spacing>

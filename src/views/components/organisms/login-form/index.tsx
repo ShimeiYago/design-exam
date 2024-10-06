@@ -3,10 +3,14 @@ import { Spacing } from 'views/components/atoms/spacing';
 import { TextWrapper } from 'views/components/atoms/text-wrapper';
 import { LabeledInputField } from 'views/components/moleculars/labeled-input-field';
 import { Button } from 'views/components/atoms/button';
+import { useAppDispatch, useAppSelector } from 'store';
+import { selectEmail } from 'store/login/selector';
+import { setEmail } from 'store/login/slice';
 
 export function LoginForm(props: Props): JSX.Element {
   const { onLogin } = props;
-  const [mailAddress, setMailAddress] = React.useState('');
+  const email = useAppSelector(selectEmail);
+  const dispatch = useAppDispatch();
   const [password, setPassword] = React.useState('');
 
   return (
@@ -20,8 +24,8 @@ export function LoginForm(props: Props): JSX.Element {
         <Spacing marginBottom="24px">
           <LabeledInputField
             label="メールアドレス"
-            value={mailAddress}
-            onChange={(e) => setMailAddress(e.target.value)}
+            value={email}
+            onChange={(e) => dispatch(setEmail(e.target.value))}
           />
         </Spacing>
         <Spacing>

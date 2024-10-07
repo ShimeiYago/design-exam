@@ -64,7 +64,7 @@ export function FilterForm(props: Props): JSX.Element {
       onChange: (e) => setClassification(e.target.value as ResasClassification),
     },
     {
-      groupLabel: '進学・就職先',
+      groupLabel: '表示内容',
       options: [
         { value: ResasMatter.Local, label: RESAS_MATTER_LABELS[ResasMatter.Local] },
         { value: ResasMatter.Outflow, label: RESAS_MATTER_LABELS[ResasMatter.Outflow] },
@@ -76,7 +76,7 @@ export function FilterForm(props: Props): JSX.Element {
       onChange: (e) => setMatter(e.target.value as ResasMatter),
     },
     {
-      groupLabel: '表示内容',
+      groupLabel: '表示区分',
       options: getDisplayTypeOptions(), // Assuming this uses RESAS_DISPLAY_TYPE_LABELS internally
       selectedValue: displayType,
       disabled,

@@ -36,12 +36,12 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     />
   </Spacing>
   <Spacing
-    key="filtering-進学・就職先"
+    key="filtering-表示内容"
     marginTop="32px"
   >
     <RadioGroup
       disabled={false}
-      groupLabel="進学・就職先"
+      groupLabel="表示内容"
       onChange={[Function]}
       options={
         Array [
@@ -67,12 +67,12 @@ exports[`Shallow Snapshot Tests basic 1`] = `
     />
   </Spacing>
   <Spacing
-    key="filtering-表示内容"
+    key="filtering-表示区分"
     marginTop="32px"
   >
     <RadioGroup
       disabled={false}
-      groupLabel="表示内容"
+      groupLabel="表示区分"
       onChange={[Function]}
       options={
         Array [

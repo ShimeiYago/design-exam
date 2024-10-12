@@ -10,6 +10,52 @@
   font-size: 16px;
 }
 
+.disabled .label {
+  opacity: 25%;
+}
+
 .radioInput {
   margin-right: 8px;
+  appearance: none;
+  border: 1px solid #94A3B8;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+/* Checked */
+.radioInput:checked {
+  border: 5px solid #2563EB;
+}
+
+/* Hover */
+.radioInput:hover {
+  background-color: #E2E8F0;
+}
+.radioInput:checked:hover {
+  border-color: #1D4ED8;
+  background-color: #ffffff;
+}
+
+/* Pressed */
+.radioInput:active {
+  background-color: #CBD5E1;
+}
+.radioInput:checked:active {
+  border-color: #1E40AF;
+}
+
+/* Disabled */
+.radioInput:disabled {
+  cursor: not-allowed;
+}
+.disabled .label {
+  cursor: not-allowed;
+}
+
+/* Focus */
+.radioInput:focus {
+  outline: 2px solid #0057D9;
+  outline-offset: 2px;
 }

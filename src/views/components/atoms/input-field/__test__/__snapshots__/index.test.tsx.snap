@@ -2,7 +2,16 @@
 
 exports[`Shallow Snapshot Tests basic 1`] = `
 <input
-  className="input"
+  className="input default"
+  onChange={[MockFunction]}
+  type="text"
+  value="text"
+/>
+`;
+
+exports[`Shallow Snapshot Tests error 1`] = `
+<input
+  className="input error"
   onChange={[MockFunction]}
   type="text"
   value="text"

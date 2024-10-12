@@ -21,4 +21,9 @@ describe('Shallow Snapshot Tests', () => {
   it('basic', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('disabled', () => {
+    wrapper.setProps({ disabled: true });
+    expect(wrapper).toMatchSnapshot();
+  });
 });

@@ -1,17 +1,49 @@
 .input {
-  padding: 8px;
-  border: 1px solid #94A3B8;
+  padding: 10px 12px;
   border-radius: 8px;
   font-size: 16px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.input:focus {
-  border-color: #007bff;
-  outline: none;
+/* Normal */
+.default {
+  border: 1px solid #94A3B8;
+}
+.error {
+  background-color: #FFF1F2;
+  border: 1px solid #E11D48;
 }
 
-.input::placeholder {
-  color: #a9a9a9;
+/* Hover */
+.default:hover {
+  border-color: #64748B;
+}
+.error:hover {
+  border-color: #BE123C;
+}
+
+/* Active & Focus */
+.default:active,
+.default:focus {
+  border-color: #1D4ED8;
+  outline: 2px solid #1D4ED8;
+  outline-offset: 2px;
+}
+.error:active,
+.error:focus {
+  outline: 2px solid #E11D48;
+  outline-offset: 2px;
+}
+
+/* Disabled */
+.input:disabled {
+  opacity: 25%;
+  cursor: not-allowed;
+}
+
+/* readonly */
+.input[readonly] {
+  background-color: #E2E8F0;
+  color: #64748B;
 }

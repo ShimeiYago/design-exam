@@ -42,3 +42,48 @@ exports[`Shallow Snapshot Tests basic 1`] = `
   </label>
 </div>
 `;
+
+exports[`Shallow Snapshot Tests disabled 1`] = `
+<div
+  className="group disabled"
+>
+  <Spacing
+    marginBottom="8px"
+  >
+    <TextWrapper
+      bold={true}
+      size="small"
+    >
+      classification
+    </TextWrapper>
+  </Spacing>
+  <label
+    className="label"
+    key="radio-1"
+  >
+    <input
+      checked={true}
+      className="radioInput"
+      disabled={true}
+      onChange={[MockFunction]}
+      type="radio"
+      value="1"
+    />
+    schooling
+  </label>
+  <label
+    className="label"
+    key="radio-2"
+  >
+    <input
+      checked={false}
+      className="radioInput"
+      disabled={true}
+      onChange={[MockFunction]}
+      type="radio"
+      value="2"
+    />
+    employment
+  </label>
+</div>
+`;

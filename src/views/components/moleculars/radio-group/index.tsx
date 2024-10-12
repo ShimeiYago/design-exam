@@ -5,8 +5,11 @@ import { Spacing } from 'views/components/atoms/spacing';
 export function RadioGroup(props: Props): JSX.Element {
   const { options, groupLabel, selectedValue, disabled, onChange } = props;
 
+  const groupClassNames = [styles.group];
+  if (disabled) groupClassNames.push(styles.disabled);
+
   return (
-    <div className={styles.group}>
+    <div className={groupClassNames.join(' ')}>
       <Spacing marginBottom="8px">
         <TextWrapper size="small" bold>
           {groupLabel}
